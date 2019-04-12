@@ -18,6 +18,9 @@ class FlaskTestCase(unittest.TestCase):
         resp = json.loads(response.data)
         self.assertEqual(resp['answer'],35,'Multiply endpoint failed known answer 7*5 = 35')
 
+    def test_this_will_fail(self):
+        self.assertEqual(2, 3, 'this will fail dude')
+
 
     # TODO DEFINE TWO MORE TESTS ON THE END POINTS
 
